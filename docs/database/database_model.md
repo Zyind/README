@@ -72,34 +72,57 @@ A integridade é garantida por chaves primárias e estrangeiras, utilizando MySQ
   (Campo)	(Tipo)	(Restrição)	(Descrição)
   
   id_usuario	INT	PK, AI	Identificador único do usuário
+  
   nome	VARCHAR(100)	NOT NULL	Nome do usuário
+  
   email	VARCHAR(100)	UNIQUE, NOT NULL	E-mail de login
+  
   senha	VARCHAR(20)	NOT NULL	Senha do usuário (não criptografada no modelo atual)
+  
   tipo	ENUM	DEFAULT 'cidadao'	Tipo de usuário (cidadao/gestor)
+  
   data_criacao	TIMESTAMP	DEFAULT CURRENT_TIMESTAMP	Data de cadastro
+
 
   TABELA ocorrencias
 
   id_ocorrencias	INT	PK, AI	Identificador da ocorrência
+  
   titulo	VARCHAR(100)	NOT NULL	Título resumido
+  
   descricao	LONGTEXT	NOT NULL	Detalhamento da ocorrência
+  
   localizacao	VARCHAR(255)	NOT NULL	Endereço/localização
+  
   foto_url	VARCHAR(255)	NULL	URL da imagem
+  
   status	ENUM	DEFAULT 'pendente'	Situação da ocorrência
+  
   data_criacao	TIMESTAMP	DEFAULT CURRENT_TIMESTAMP	Data do registro
+  
   id_usuario	INT	FK → usuarios(id_usuario)	Usuário que cadastrou
+  
 
   TABELA comentarios
 
   id_comentario	INT	PK, AI	Identificador do comentário
+  
   texto	MEDIUMTEXT	NOT NULL	Texto do comentário
+  
   data_criacao	TIMESTAMP	DEFAULT CURRENT_TIMESTAMP	Data do comentário
+  
   id_usuario	INT	FK → usuarios(id_usuario)	Autor do comentário
+  
   id_ocorrencias	INT	FK → ocorrencias(id_ocorrencias)	Ocorrência comentada
+  
 
   TABELA historico_status
 
   id_historico	INT	PK, AI	Identificador do histórico
+  
   status	ENUM	NOT NULL	Status registrado (pendente, em_andamento, concluido)
+  
   data_alteracao	TIMESTAMP	DEFAULT CURRENT_TIMESTAMP	Momento da alteração
+  
   id_ocorrencias	INT	FK → ocorrencias(id_ocorrencias)	Ocorrência vinculada
+  
