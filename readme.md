@@ -66,6 +66,36 @@ Outros: GitHub para versionamento, Draw.io para diagramas, VS Code como IDE.
 
 # Cronograma da Etapa 2 (N708)
 
+1. Planejamento e alinhamento inicial
+
+Atividades: reunião de kick-off, revisão dos objetivos, definição de papéis e responsabilidades.
+
+Período: 1ª semana do trimestre.
+
+2. Levantamento e preparação
+
+Atividades: análise de requisitos, coleta de dados/insumos necessários, ajustes de ferramentas e acessos.
+
+Período: semanas 2 a 3.
+
+3. Execução das atividades principais
+
+Atividades: desenvolvimento/testes (ou a ação prática específica da N708), acompanhamento contínuo, registros de progresso.
+
+Período: semanas 4 a 8.
+
+4. Validação e ajustes
+
+Atividades: revisão interna, correções de eventuais falhas, consolidação de resultados.
+
+Período: semanas 9 e 10.
+
+5. Finalização e entrega
+
+Atividades: compilação do relatório final, apresentação dos resultados e fechamento da etapa.
+
+Período: semanas 11 e 12.
+
 # Integrantes da equipe e seus papéis
 
 Davlyo Wilson da Conceição de Souza - 2326257 (Idealização das APIs do sistema)
