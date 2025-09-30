@@ -26,7 +26,7 @@ MVC (Model-View-Controller) no frontend: organiza a interface.
 
 # Diagrama da Arquitetura
 
-
+https://l1nk.dev/architecture
 
 # Decisões técnicas e justificativas
 
